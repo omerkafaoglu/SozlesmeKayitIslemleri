@@ -1,0 +1,122 @@
+﻿@model SozlesmeKayitIslemleri.Models.Sozlesme
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Alt Sözleşme Detayları</h2>
+
+<div>
+    <h4>Sozlesme</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.TCVergiKimlikNo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TCVergiKimlikNo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UnvanAdSoyad)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UnvanAdSoyad)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BaslangicTarihi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BaslangicTarihi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BitisTarihi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BitisTarihi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Durumu)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Durumu)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SozlesmeTuru)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SozlesmeTuru)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Aciklama)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Aciklama)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TalepNumarasi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TalepNumarasi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GelenEvrakTarihi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GelenEvrakTarihi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GelenEvrakSayisi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GelenEvrakSayisi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OlurTarihi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OlurTarihi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OlurSayisi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OlurSayisi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Dosya)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Dosya)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Düzenle", "Edit", new { id = Model.SicilNumarasi }) |
+    @Html.ActionLink("Listeye Dön", "Index")
+</p>

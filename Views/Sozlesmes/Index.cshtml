@@ -1,0 +1,105 @@
+﻿@model IEnumerable<SozlesmeKayitIslemleri.Models.Sozlesme>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Maden Alt Sözleşme İşlemleri</h2>
+
+<p>
+    @Html.ActionLink("Yeni Oluştur", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            TC Vergi Kimlik No@*@Html.DisplayNameFor(model => model.TCVergiKimlikNo)*@
+        </th>
+        <th>
+            Unvan / Ad Soyad@*@Html.DisplayNameFor(model => model.UnvanAdSoyad)*@
+        </th>
+        <th>
+            Başalngıç Tarihi@*@Html.DisplayNameFor(model => model.BaslangicTarihi)*@
+        </th>
+        <th>
+            Bitiş Tarihi@*@Html.DisplayNameFor(model => model.BitisTarihi)*@
+        </th>
+        <th>
+            Açıklama@*@Html.DisplayNameFor(model => model.Aciklama)*@
+        </th>
+        <th>
+            Durumu@*@Html.DisplayNameFor(model => model.Durumu)*@
+        </th>
+        <th>
+            Sözleşme Türü@*@Html.DisplayNameFor(model => model.SozlesmeTuru)*@
+        </th>
+        <th>
+            Talep Numarası@*@Html.DisplayNameFor(model => model.TalepNumarasi)*@
+        </th>
+        <th>
+            Gelen Evrak Tarihi@*@Html.DisplayNameFor(model => model.GelenEvrakTarihi)*@
+        </th>
+        <th>
+            Gelen Evrak Sayısı@*@Html.DisplayNameFor(model => model.GelenEvrakSayisi)*@
+        </th>
+        <th>
+            Olur Tarihi@*@Html.DisplayNameFor(model => model.OlurTarihi)*@
+        </th>
+        <th>
+            Olur Sayısı@*@Html.DisplayNameFor(model => model.OlurSayisi)*@
+        </th>
+        <th>
+            Dosya@*@Html.DisplayNameFor(model => model.Dosya)*@
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+<tr>
+    <td>
+        @Html.DisplayFor(modelItem => item.TCVergiKimlikNo)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.UnvanAdSoyad)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.BaslangicTarihi)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.BitisTarihi)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Durumu)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.SozlesmeTuru)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Aciklama)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.TalepNumarasi)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.GelenEvrakTarihi)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.GelenEvrakSayisi)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.OlurTarihi)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.OlurSayisi)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Dosya)
+    </td>
+    <td>
+        @Html.ActionLink("Edit", "Edit", new { id = item.SicilNumarasi }) |
+        @Html.ActionLink("Details", "Details", new { id = item.SicilNumarasi }) |
+        @Html.ActionLink("Delete", "Delete", new { id = item.SicilNumarasi })
+    </td>
+</tr>
+}
+
+</table>

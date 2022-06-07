@@ -1,4 +1,4 @@
-﻿using SozlesmeKayitIslemleri.Models.Guncelleme;
+﻿using SozlesmeKayitIslemleri.Models;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -13,6 +13,7 @@ namespace SozlesmeKayitIslemleri.Models
         {
 
         }
+
         public DbSet<Sozlesme>  Sozlesme { get; set; }
     }
 }
