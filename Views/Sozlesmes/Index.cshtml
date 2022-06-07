@@ -4,7 +4,10 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Maden Alt Sözleşme İşlemleri</h2>
+<div class="p-3 mb-2 bg-primary text-white"><h2 style="text-align:center">Maden Alt Sözleşmeleri</h2>
+    
+    </div>
+
 
 <p>
     @Html.ActionLink("Yeni Oluştur", "Create")
@@ -18,7 +21,7 @@
             Unvan / Ad Soyad@*@Html.DisplayNameFor(model => model.UnvanAdSoyad)*@
         </th>
         <th>
-            Başalngıç Tarihi@*@Html.DisplayNameFor(model => model.BaslangicTarihi)*@
+            Başlangıç Tarihi@*@Html.DisplayNameFor(model => model.BaslangicTarihi)*@
         </th>
         <th>
             Bitiş Tarihi@*@Html.DisplayNameFor(model => model.BitisTarihi)*@
